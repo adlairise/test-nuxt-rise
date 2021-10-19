@@ -7,9 +7,7 @@ This text right here is all custom written by Adlai - below is the readme.md gen
 
 So far what's working is the routing - following [this](https://codesandbox.io/s/github/nuxtlabs/examples/tree/master/routing/dynamic-pages?from-embed=&file=/pages/_continent/_mountain.vue:0-745) guide, and the [native ssr](https://nuxtjs.org/docs/concepts/server-side-rendering/). 
 
-We need to get components working, along with styling. Open to any suggestions as far as styling goes. 
-
-[Styled Components](https://styled-components.com/) seems to be pretty cool and popular lately, might be worth investigating. Otherwise SCSS and Less are also more proven and long-standing standards that we're more used to.  
+We are now rendering components properly and using [Styled Components](https://styled-components.com/) to style components - feels like this is pretty fitting in terms of the way that we've structured projects in the past and styled components allow for cool stuff with passing functions to create the generated style classes.  
 
 ## Build Setup
 

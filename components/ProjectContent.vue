@@ -21,8 +21,6 @@ export default {
     project: {}
   },
   data () {
-    console.log('in data')
-    console.log(this.project)
     return {
       projectData: this.project
     }

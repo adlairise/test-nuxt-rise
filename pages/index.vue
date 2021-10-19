@@ -1,14 +1,16 @@
 <template>
   <div>
     <ul v-for="project in projects" :key="project.id">
-      <NuxtLink :to="`projects/${project.id}`">
-        <li>{{ project.title.rendered }}</li>
-      </NuxtLink>
+      <ProjectListItem :link="`projects/${project.id}`"
+                       :title="project.title.rendered"
+                       :id="parseInt(project.id)"/>
     </ul>
   </div>
 </template>
 
 <script>
+import ProjectListItem from '~/components/ProjectListItem'
+
 export default {
   async asyncData() {
     const projects = await fetch(
@@ -17,6 +19,10 @@ export default {
 
 
     return { projects }
+  },
+
+  components: {
+    ProjectListItem
   }
 }
 </script>

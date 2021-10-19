@@ -15,7 +15,7 @@ export default {
   async asyncData ({ params, redirect }) {
     const projects = await fetch(
       'https://barbarian-encampment.net/axelwp/wp-json/wp/v2/projects'
-    ).then((res) => { res.json() })
+    ).then((res) => { return res.json() })
 
     const filteredProject = projects.find(
       (el) => {
