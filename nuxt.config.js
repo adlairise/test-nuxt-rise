@@ -1,22 +1,20 @@
-import { resolve } from 'path'
-
 export default {
   alias: {
   },
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: `static`,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'test-nuxt-app',
+    title: `test-nuxt-app`,
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { charset: `utf-8` },
+      { name: `viewport`, content: `width=device-width, initial-scale=1` },
+      { hid: `description`, name: `description`, content: `` },
+      { name: `format-detection`, content: `telephone=no` }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: `icon`, type: `image/x-icon`, href: `/favicon.ico` }
     ]
   },
 
@@ -34,19 +32,17 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module',
+    `@nuxtjs/eslint-module`,
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    `@nuxtjs/tailwindcss`
   ],
-
-  projectContent: '~/components/ProjectContent.vue',
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    `@nuxtjs/axios`,
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    `@nuxtjs/pwa`
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -55,7 +51,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: `en`
     }
   },
 
