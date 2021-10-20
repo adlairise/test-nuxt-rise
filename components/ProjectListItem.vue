@@ -11,6 +11,9 @@
 import ProjectListItemStyle from '~/styles/components/ProjectListItem'
 
 export default {
+  components: {
+    ProjectListItemStyle
+  },
   props: {
     link: {},
     title: {},
@@ -19,11 +22,8 @@ export default {
   data () {
     return {
       itemLink: this.link,
-      itemTitle: this.title,
+      itemTitle: this.title
     }
-  },
-  components: {
-      ProjectListItemStyle
   }
 }
 </script>

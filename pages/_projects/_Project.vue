@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <ProjectContent :project="project" />
-    </div>
+  <div>
+    <ProjectContent :project="project" />
+  </div>
 </template>
 <script>
 import ProjectContent from '~/components/ProjectContent'
@@ -9,12 +9,12 @@ import ProjectContent from '~/components/ProjectContent'
 export default {
 
   components: {
-    ProjectContent
+    ProjectContent,
   },
 
   async asyncData ({ params, redirect }) {
     const projects = await fetch(
-      'https://barbarian-encampment.net/axelwp/wp-json/wp/v2/projects'
+      `https://barbarian-encampment.net/axelwp/wp-json/wp/v2/projects`
     ).then((res) => { return res.json() })
 
     const filteredProject = projects.find(
@@ -27,7 +27,7 @@ export default {
         project: filteredProject
       }
     } else {
-      redirect('/')
+      redirect(`/`)
     }
   }
 }

@@ -2,9 +2,6 @@ import { resolve } from 'path'
 
 export default {
   alias: {
-    'styles': resolve(__dirname, './styles'),
-    'components': resolve(__dirname, './components')
-
   },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
