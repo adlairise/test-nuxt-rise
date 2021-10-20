@@ -1,4 +1,4 @@
-import styled from 'vue-styled-components';
+import styled from 'vue-styled-components'
 
 const ProjectListItem = styled.section`
     padding: 1.2em;
@@ -7,6 +7,5 @@ const ProjectListItem = styled.section`
         background-color: yellow;
     }
 `
-    
 
 export default ProjectListItem
